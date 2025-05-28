@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSHWANTSHA Animation Studio</title>
+
+  <style>
+    video {
+      display: block;
+      margin: 0 auto 40px auto;
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    #intro-video {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #intro-video h2 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+
+  <header>
+    <a href="index.html">
+      <img src="logo.jpg" alt="Tshwantsha Logo" width="200" />
+    </a>
+    <h1>Welcome to TSHWANTSHA Animation Studio</h1>
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro-video" class="card">
+      <h2>Discover the Magic Behind Our Animation!</h2>
+      <video width="960" height="544" controls>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="hero" class="card">
+      <h2><i class="fas fa-film"></i> Bringing African Stories to Life</h2> 
+
+      <p>
+        At TSHWANTSHA Animation Studio, we strive to tell powerful African stories through animation —
+        showcasing the continent’s creativity, beauty, and innovation like never before.
+      </p>
+      <p>
+        Our mission is to inspire, entertain, and amplify African voices through bold, original visual storytelling.
+      </p>
+      <a href="about.html" class="cta-button">Discover Our Story</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TSHWANTSHA Animation Studio</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("toggle-dark-mode");
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+    });
+  </script>
+</body>
+</html>

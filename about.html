@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - TSHWANTSHA Animation Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+	<img src="logo.jpg" alt="Tshwantsha Logo" width="200" />
+    </a>
+    <h1>About TSHWANTSHA Animation Studio</h1>
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <i class="fas fa-users fa-2x" style="color: #0055aa;"></i>
+      <div class="card-content">
+        <h2>Who Are We?</h2>
+        <p>Established in 2020, TSHWANTSHA Animation Studios (T.A.S) was founded by two young Botswana creatives who graduated with a Bachelor Degree in Creative Multimedia in 2017. Having worked in the industry, they saw a need for more vibrant, impactful creative content in advertising and media.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-bullseye fa-2x" style="color: #0055aa;"></i>
+      <div class="card-content">
+        <h2>Our Mission</h2>
+        <p>At TSHWANTSHA Animation Studio, our mission is to tell captivating stories through compelling animation. We aim to breathe life into ideas using creativity and cutting-edge animation techniques that elevate brand storytelling.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-film fa-2x" style="color: #0055aa;"></i>
+      <div class="card-content">
+        <h2>Our Story</h2>
+        <p>Born from a passion for storytelling and visual arts, our studio is built on the creativity of animators, designers, and visionaries. Our work is rooted in innovation, and we continuously challenge ourselves to go beyond the ordinary.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TSHWANTSHA Animation Studio</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("toggle-dark-mode");
+
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+    });
+  </script>
+</body>
+</html>

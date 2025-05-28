@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - TSHWANTSHA Animation Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="logo.jpg" alt="Tshwantsha Logo" width="200" />
+    </a>
+    <h1>💡 Have a Project in Mind? Contact Us!</h1>
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <i class="fas fa-envelope fa-2x" style="color: #0055aa;"></i>
+      <div class="card-content">
+        <h2>Get in Touch</h2>
+        <p>You can reach us using the details below. We look forward to working with you!</p>
+        <ul>
+          <li><strong>Email:</strong> tshwantshaanimationstudio@gmail.com</li>
+          <li><strong>Phone:</strong> +267 73638296 / +276 75611863</li>
+          <li><strong>Address:</strong> Plot 5389, Masetlheng, Tlokweng</li>
+          <li><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("toggle-dark-mode");
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+    });
+  </script>
+    <p>&copy; 2025 TSHWANTSHA Animation Studio</p>
+    <div style="margin-top: 10px;">
+      <a href="https://wa.me/26771234567" target="_blank" title="WhatsApp" style="margin-right: 15px;">
+        <i class="fab fa-whatsapp fa-lg"></i>
+      </a>
+      <a href="https://instagram.com/tshwantsha.studio" target="_blank" title="Instagram" style="margin-right: 15px;">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://facebook.com/tshwantsha.studio" target="_blank" title="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+    </div>

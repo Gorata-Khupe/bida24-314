@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services - TSHWANTSHA Animation Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="logo.jpg" alt="Tshwantsha Logo" width="200" />
+    </a>
+    <h1>Our Services</h1>
+    <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <i class="fas fa-briefcase fa-2x"></i>
+      <div class="card-content">
+        <h2>What We Offer</h2>
+        <p>We provide animated content for the following market segments:</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-building fa-2x"></i>
+      <div class="card-content">
+        <h2>Corporate Entities</h2>
+        <p>We help businesses deliver value propositions in creative ways through:</p>
+        <ul>
+          <li>Explainer videos</li>
+          <li>Product advertisement</li>
+          <li>Logo reveals</li>
+          <li>Company training videos</li>
+          <li>Graphic design</li>
+          <li>Videography</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-tags fa-2x"></i>
+      <div class="card-content">
+        <h2>Solo Products and Services</h2>
+        <p>Pricing breakdown for individual products:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Duration</th>
+              <th>Quantity</th>
+              <th>Rates</th>
+              <th>Cost</th>
+              <th>Production Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Logo Reveal</td>
+              <td>5–8 sec</td>
+              <td>1</td>
+              <td>P800*</td>
+              <td>P4,000</td>
+              <td>1 week</td>
+            </tr>
+            <tr>
+              <td>2D Animation Ad</td>
+              <td>30 sec</td>
+              <td>1</td>
+              <td>P450/sec</td>
+              <td>P13,500</td>
+              <td>2 weeks</td>
+            </tr>
+            <tr>
+              <td>Explainer Video/Video Ad</td>
+              <td>2 min</td>
+              <td>1</td>
+              <td>P200/sec</td>
+              <td>P24,000</td>
+              <td>4 weeks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-video fa-2x"></i>
+      <div class="card-content">
+        <h2>Product Descriptions</h2>
+        <ul>
+          <li><strong>Logo reveals:</strong> Short animations introducing your brand logo.</li>
+          <li><strong>Animated ads:</strong> Eye-catching commercial animations.</li>
+          <li><strong>Explainer videos:</strong> Educational animations for products/services.</li>
+          <li><strong>Video ads:</strong> Videography enhanced with motion graphics.</li>
+          <li><strong>Animated existing content:</strong> Reimagine your current content in animated form.</li>
+          <li><strong>Episodic videos:</strong> Story-driven series created for online platforms.</li>
+          <li><strong>Comic strips:</strong> Illustrated stories and short animated features released weekly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-lightbulb fa-2x"></i>
+      <div class="card-content">
+        <h2>Original Concepts</h2>
+        <p>Our passion is telling African stories. We create animated short films and collaborate on content inspired by Botswana's folk tales, legends, and modern narratives, working both locally and internationally.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TSHWANTSHA Animation Studio</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("toggle-dark-mode");
+      const isDarkMode = document.body.classList.contains("dark-mode");
+      toggleButton.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+    });
+  </script>
+</body>
+</html>
